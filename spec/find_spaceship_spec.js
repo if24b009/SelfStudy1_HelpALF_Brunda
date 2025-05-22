@@ -22,4 +22,8 @@ describe('Find Spaceship', function() {
 	it('should return [1,0] for "..........\n..........\n..........\n..........\n..........\n.X........"', function() {
 		expect(spaceshipFinder.add('..........\n..........\n..........\n..........\n..........\n.X........')).toEqual([1,0]);
 	});
+
+	it('should return [4,0] for "..........\n..........\n..........\n..........\n..........\n....X....."', function() {
+		expect(spaceshipFinder.add('..........\n..........\n..........\n..........\n..........\n....X.....')).toEqual([4,0]);
+	});
 });
