@@ -1,7 +1,7 @@
 TODO LIST
-"“ => "Spaceship lost forever"
+"“ => "Spaceship lost forever" OK
 
-"........." => "Spaceship lost forever"
+"........." => "Spaceship lost forever" in Arbeit
 
 "..........\n..........\n..........\n..........\n..........\n..........“ => "Spaceship lost forever"
 

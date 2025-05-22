@@ -6,4 +6,8 @@ describe('Find Spaceship', function() {
 	it('should return "Spaceship lost forever" for an empty string', function() {
 		expect(spaceshipFinder.add('')).toEqual("Spaceship lost forever");
 	});
+
+	it('should return "Spaceship lost forever" for "........."', function() {
+		expect(spaceshipFinder.add('.........')).toEqual("Spaceship lost forever");
+	});
 });
