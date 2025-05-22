@@ -1,4 +1,4 @@
-// FindSpaceship.js
+// findSpaceship.js
 function findSpaceship() {}
 findSpaceship.prototype.add = function(map) {
 	let result = "Spaceship lost forever";
