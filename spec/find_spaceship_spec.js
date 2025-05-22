@@ -38,4 +38,8 @@ describe('Find Spaceship', function() {
 	it('should return [3,0] for "....\n....\n....\n...X"', function() {
 		expect(spaceshipFinder.add('....\n....\n....\n...X')).toEqual([3,0]);
 	});
+
+	it('should return [3,3] for "..........\n...X......\n..........\n..........\n.........."', function() {
+		expect(spaceshipFinder.add('..........\n...X......\n..........\n..........\n..........')).toEqual([3,3]);
+	});
 });
