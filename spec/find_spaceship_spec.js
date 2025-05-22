@@ -50,4 +50,8 @@ describe('Find Spaceship', function() {
 	it('should return [4,4] for "....X\n.....\n.....\n.....\n....."', function() {
 		expect(spaceshipFinder.add('....X\n.....\n.....\n.....\n.....')).toEqual([4,4]);
 	});
+
+	it('should return [5,0] for ".....X..."', function() {
+		expect(spaceshipFinder.add('.....X...')).toEqual([5,0]);
+	});
 });
