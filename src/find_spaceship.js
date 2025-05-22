@@ -3,9 +3,11 @@ function findSpaceship() {}
 findSpaceship.prototype.add = function(map) {
 	let result = "Spaceship lost forever";
 	const lines = map.split('\n');
-	if (lines[lines.length-1].includes('X')) {
-		const xCoordinate = lines[lines.length-1].indexOf('X');
-		result = [xCoordinate,0];
-	}
+	lines.forEach(line => {
+		if (line.includes('X')) {
+			const xCoordinate = line.indexOf('X');
+			result = [xCoordinate, (lines.length-1) - lines.indexOf(line)]; //y reversed
+		}
+	});
 	return result;
 };
